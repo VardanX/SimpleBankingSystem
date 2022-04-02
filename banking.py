@@ -196,9 +196,7 @@ banking.start()
 
 """
    While updating the database pass the values inside a tuple.
-   PRIMARY KEY AUTOINCREMENT automatically +1 the value of the desired column
-   Use fetchall to fetch data from database
-   fetched data comes inside a tuple which is inside a list using fetchall()
+  
 """
 
 
