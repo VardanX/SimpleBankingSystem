@@ -31,7 +31,7 @@ class Bank:
         tot_account = self.account_digit + account_identifier
         acc_no_list = [int(x) for x in str(tot_account)]
         # Using for loop to multiply digits in even index
-        for i in range(0, len(acc_no_list) + 1, 2):
+        for i in range(0, len(acc_no_list), 2):
             acc_no_list[i] *= 2
             if acc_no_list[i] > 9: # if the number is greater than 9 subtract the number by 9
                 acc_no_list[i] -= 9
@@ -50,7 +50,7 @@ class Bank:
         acc_no_list = [int(x) for x in self.acc]
         checksum = acc_no_list.pop(-1)
         # Using for loop to multiply digits in even index
-        for i in range(0, len(acc_no_list) + 1, 2):
+        for i in range(0, len(acc_no_list), 2):
             acc_no_list[i] *= 2
             if acc_no_list[i] > 9:  # if the number is greater than 9 subtract the number by 9
                 acc_no_list[i] -= 9
